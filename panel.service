@@ -1,0 +1,15 @@
+[Unit]
+# Human readable name of the unit
+Description=Panel Service
+
+[Service]
+# Command to execute when the service is started
+ExecStart=/home/pi/.local/bin/uv run python -m service
+WorkingDirectory=/home/pi/projects/epaper-display-panel
+# restart on failure
+Restart=on-failure
+RestartSec=30
+
+[Install]
+# start at boot
+WantedBy=default.target
