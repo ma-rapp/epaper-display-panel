@@ -1,1 +1,2 @@
 server_url: http://192.168.178.222:8081
+switch_to_next_app_after_minutes: 15
